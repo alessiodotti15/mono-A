@@ -1,6 +1,5 @@
 
-// TODO Inserire il package corretto
-package __TODO__;
+package it.marconicivitavecchia.as2018_19.c5Binf.verifica;
 
 import javax.swing.*;
 
@@ -10,17 +9,22 @@ public class Main extends JFrame {
 		super("Project X");
 		super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		// TODO Inserire la size in accordo con il wireframe
-		super.setSize(__TODO__,__TODO__);
+		super.setSize(800,400);
 		
-		// TODO Usare StringBuilder per costruire la stringa HTML
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>");
+		sb.append("<h1>Almanacco astronomico</h1>");
 		
+		sb.append("<h3>Novembre 2018</h3>");
+		
+		sb.append("<div style='display:table'>");
 		// TODO Creare la stringa HTML per il wireframe
 		
 		// TODO Convertire lo StringBuilder in String
 		
 		// TODO Assegnare correttamente la stringa create a JLabel
-		super.add(new JLabel(__TODO__));
+		String htmlText = sb.toString();
+		super.add(new JLabel(htmlText));
 		super.setVisible(true);
 		 
 		System.out.println(htmlText);
